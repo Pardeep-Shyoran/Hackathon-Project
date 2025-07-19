@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": "XpE158C_JSurCjBQUTEkK",
+      "image": "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "username": "admin",
+      "email": "admin@email.com",
+      "password": "987654321",
+      "isAdmin": true,
+      "cart": []
+    },
+    {
+      "id": "2535",
+      "image": "https://play-lh.googleusercontent.com/vco-LT_M58j9DIAxlS1Cv9uvzbRhB6cYIZJS7ocZksWRqoEPat_QXb6fVFi77lciJZQ=w526-h296-rw",
+      "username": "pardeep",
+      "email": "pardeep@gmail.com",
+      "password": "@Pardeep2004"
+    },
+    {
+      "id": "f127",
+      "image": "https://sepiastories.in/wp-content/uploads/2021/02/CORDOOrganicCottonDressYellow02.jpg",
+      "username": "Ban Rakas",
+      "email": "banrakas@panchayat.com",
+      "password": "@Banrakas2"
+    }
+  ]
+}

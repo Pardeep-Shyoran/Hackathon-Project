@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+
+:root {
+	--font-family1: "Roboto", sans-serif;
+	--font-family2: "Antonio", sans-serif;
+	--primary-color: #f0f0f0;
+	--black: #222123;
+	--dark-brown: #523122;
+	--milk: #faeade;
+	--middle-brown: #a26833;
+	--light-brown: #e3a458;
+	--beige: #f5d6a0;
+	--red: #a02128;
+	--white: white;
+	--light-red: #ff0000;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--milk);
+	color: var(--dark-brown);
+}
