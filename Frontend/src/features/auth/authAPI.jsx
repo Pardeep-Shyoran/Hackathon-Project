@@ -1,19 +1,17 @@
-import axios from 'axios';
+// import axios from "../../api/axiosconfig";
 
-const API_URL = 'http://localhost:3000/users';
+// export const registerUser = async (user) => {
+//     const existingUser = await axios.get(`${API_URL}?email=${user.email}`);
+//     if (existingUser.data.length) {
+//         throw new Error('Email already registered');
+//     }
+//     return axios.post(API_URL, user);
+// };
 
-export const registerUser = async (user) => {
-    const existingUser = await axios.get(`${API_URL}?email=${user.email}`);
-    if (existingUser.data.length) {
-        throw new Error('Email already registered');
-    }
-    return axios.post(API_URL, user);
-};
-
-export const loginUser = async ({ email, password }) => {
-    const res = await axios.get(`${API_URL}?email=${email}&password=${password}`);
-    if (!res.data.length) {
-        throw new Error('Invalid credentials');
-    }
-    return res.data[0];
-};
+// export const loginUser = async ({ email, password }) => {
+//     const res = await axios.get(`${API_URL}?email=${email}&password=${password}`);
+//     if (!res.data.length) {
+//         throw new Error('Invalid credentials');
+//     }
+//     return res.data[0];
+// };

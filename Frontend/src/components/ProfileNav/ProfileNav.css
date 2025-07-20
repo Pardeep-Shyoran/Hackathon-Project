@@ -1,0 +1,126 @@
+.user-profile-nav-root {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;              /* gap-8 */
+  padding: 5rem 2.5rem;   /* py-20 px-10 */
+  background: var(--dark-brown-trans);
+  border-top-right-radius: 3rem;     /* rounded-tr-4xl */
+  border-bottom-right-radius: 3rem;   /* rounded-br-[6vw] */
+}
+
+.user-profile-nav-link {
+  font-size: 1.5rem;      /* text-2xl */
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.user-profile-nav-link.active {
+  color: var(--light-brown);
+}
+
+.user-profile-nav-button {
+  background: var(--light-red);
+  color: #1E1E1E;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem; /* rounded */
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.user-profile-nav-button.delete {
+  background: var(--middle-red);
+}
+
+
+@media (max-width: 1024px) {
+  .user-profile-nav-root {
+    padding: 3rem 2rem;
+    max-width: 240px;
+    gap: 1.5rem;
+  }
+
+  .user-profile-nav-link {
+    font-size: 1.25rem;
+  }
+
+  .user-profile-nav-button {
+    font-size: 0.95rem;
+    padding: 0.4rem 1.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 900px) {
+  .user-profile-nav-root {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    max-width: 100%;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .user-profile-nav-link {
+    font-size: 1rem;
+  }
+
+  .user-profile-nav-button {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.25rem;
+    height: auto;
+  }
+}
+
+/* Tiny phones (≤ 480px) */
+@media (max-width: 480px) {
+  .user-profile-nav-root {
+    padding: 1.5rem 1rem;
+    gap: 0.75rem;
+    margin: 1rem;
+  }
+
+  .user-profile-nav-link {
+    font-size: 0.95rem;
+  }
+
+  .user-profile-nav-button {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+}
+
+.user-profile-nav-link {
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.user-profile-nav-link.active {
+  color: var(--light-brown);
+}
+
+.user-profile-nav-button {
+  background: var(--light-red);
+  color: #1E1E1E;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.user-profile-nav-button.delete {
+  background: var(--middle-red);
+}

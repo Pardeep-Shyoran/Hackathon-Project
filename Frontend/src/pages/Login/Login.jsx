@@ -2,8 +2,8 @@ import { Link, useNavigate } from "react-router-dom"
 import styles from "./Login.module.css"
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
-import { loginUser } from "../../features/auth/authAPI";
-import { loginSuccess } from "../../features/auth/authSlice";
+import { toast } from "react-toastify";
+import { asyncLoginUser } from "../../features/user/userActions";
 
 const Login = () => {
 
@@ -11,13 +11,15 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const onSubmit = async (data) => {
+  const onSubmit = (user) => {
     try {
-      const user = await loginUser(data);
-      dispatch(loginSuccess(user));
-      navigate('/products');
+      dispatch(asyncLoginUser(user));
+      // console.log(user);
+      navigate("/products");
+      toast.success("Logged in successfully!");
     } catch (err) {
-      alert(err.message);
+      // alert(err.message);
+      toast.error(err.message || 'Login failed');
     }
   };
 

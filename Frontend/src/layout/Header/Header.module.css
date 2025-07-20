@@ -1,0 +1,9 @@
+.header {
+	position: sticky;
+	background-color: var(--milk);
+	border-bottom-left-radius: 3rem;
+	border-bottom-right-radius: 3rem;
+	top: 0;
+	z-index: 100;
+	isolation: isolate;
+}

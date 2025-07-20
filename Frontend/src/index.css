@@ -1,18 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bitcount+Single:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
 
 :root {
 	--font-family1: "Roboto", sans-serif;
 	--font-family2: "Antonio", sans-serif;
+	--font-family3: "Bitcount Single", sans-serif;
+	--font-family4: "Montserrat", sans-serif;
+	--font-family5: "Onest", sans-serif;
+	--font-family6: "Syne", sans-serif;
+	--font-family7: "Poppins", sans-serif;
 	--primary-color: #f0f0f0;
 	--black: #222123;
 	--dark-brown: #523122;
+	--dark-brown-trans: #52312220;
 	--milk: #faeade;
 	--middle-brown: #a26833;
 	--light-brown: #e3a458;
 	--beige: #f5d6a0;
 	--red: #a02128;
 	--white: white;
-	--light-red: #ff0000;
+	--middle-red: #ff4d4d;
+	--light-red: #ff8080;
 }
 
 body {
@@ -20,4 +27,26 @@ body {
 	padding: 0;
 	background-color: var(--milk);
 	color: var(--dark-brown);
+}
+
+
+/* Custom Scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;  /* fallback or theme variable */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--middle-brown); /* or any custom color */
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--light-brown); /* lighter shade on hover */
 }

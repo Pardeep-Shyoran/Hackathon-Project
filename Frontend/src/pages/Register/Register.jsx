@@ -1,21 +1,31 @@
 import { Link, useNavigate } from "react-router-dom"
 import styles from "./Register.module.css"
 import { useForm } from "react-hook-form"
-import { registerUser } from "../../features/auth/authAPI";
+// import { registerUser } from "../../features/auth/authAPI";
+import { toast } from "react-toastify";
+import { asyncRegisterUser } from "../../features/user/userActions";
+import { nanoid } from "@reduxjs/toolkit";
+import { useDispatch } from "react-redux";
 
 
 
 const Register = () => {
 
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
-    const submitHandler = async (data) => {
+    const submitHandler =  (user) => {
         try {
-            await registerUser(data);
-            alert('Registered successfully');
-            navigate('/login');
+            user.id = nanoid();
+            user.isAdmin = false;
+            user.cart = [];
+            console.log(user);
+            dispatch(asyncRegisterUser(user));
+            navigate("/login");
+            toast.success("Your Profile created...");
         } catch (err) {
-            alert(err.message);
+            // alert(err.message);
+            toast.error(err.message || 'Registration failed');
         }
     };
 

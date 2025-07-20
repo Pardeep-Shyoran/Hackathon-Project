@@ -1,0 +1,125 @@
+.root {
+  min-height: 85vh;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-family2);
+}
+
+
+.header {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.listHeader,
+.listItem {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark-brown-trans);
+  padding: 1rem;
+  /* border-top-left-radius: 1rem; */
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.listHeader {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.img {
+  width: 7vw;
+  max-width: 100px;
+  height: 7vw;
+  max-height: 100px;
+  object-fit: cover;
+  border-top-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 1rem;
+  flex-shrink: 0;
+  background: var(--milk);
+}
+
+.itemTitle {
+  flex: 1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.itemPrice {
+  width: 100px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.qtyBtn {
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: inherit;
+}
+
+.qtyIndicator {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--dark-brown);
+  border-radius: 0.5rem;
+  color: var(--milk);
+  font-weight: bold;
+}
+
+.checkout {
+  margin-left: 10%;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 40%;
+  background: var(--dark-brown);
+  color: var(--milk);
+  font-weight: 900;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 700px) {
+  .header {
+    font-size: 2.5rem;
+  }
+  .listHeader,
+  .listItem {
+    font-size: 0.8rem;
+  }
+  .img {
+    width: 40px;
+    height: 40px;
+  }
+  .checkout {
+    width: 50%;
+    font-size: 1rem;
+    margin-left: 10%;
+  }
+}
