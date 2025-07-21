@@ -12,6 +12,8 @@
 	--black: #222123;
 	--dark-brown: #523122;
 	--dark-brown-trans: #52312220;
+	--brown1: #f2d5c0;
+	--brown1-trans: #3c251577;
 	--milk: #faeade;
 	--middle-brown: #a26833;
 	--light-brown: #e3a458;
@@ -25,6 +27,8 @@
 body {
 	margin: 0;
 	padding: 0;
+	width: 100vw;
+	height: 100vh;
 	background-color: var(--milk);
 	color: var(--dark-brown);
 }

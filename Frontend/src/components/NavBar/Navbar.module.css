@@ -25,6 +25,9 @@
 	width: 3rem;
 	height: 3rem;
 	border-radius: 50%;
+	border: 2px solid var(--dark-brown);
+	padding: 1px;
+	box-shadow: inset 0 0 5px 3px var(--middle-brown);
 }
 
 @media (max-width: 768px) {

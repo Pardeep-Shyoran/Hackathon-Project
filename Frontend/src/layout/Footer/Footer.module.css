@@ -1,10 +1,7 @@
 .footer {
   background: linear-gradient(to bottom, var(--dark-brown), var(--black));
   color: white;
-  /* padding: 4rem 2rem 2rem; */
   font-family: var(--font-family5);
-  /* border-top-left-radius: 3rem; */
-  /* border-top-right-radius: 3rem; */
   overflow: hidden;
   position: relative;
   height: 100%;
@@ -17,10 +14,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: var(--dark-brown); */
 }
 
-/* --- Top section --- */
+
 .topSection {
   padding: 0rem 2rem 0rem;
   display: flex;
@@ -45,7 +41,7 @@
   cursor: pointer;
 }
 
-/* --- Contact --- */
+
 .contact {
   text-align: right;
   max-width: 400px;
@@ -59,7 +55,7 @@
 .emailForm {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: var(--milk);
   border-radius: 2rem;
   padding: 0.25rem;
   overflow: hidden;
@@ -72,11 +68,13 @@
   padding: 0.75rem 1rem;
   font-size: 1rem;
   outline: none;
-  color: #333;
+  background-color: var(--milk);
+  color: var(--dark-brown);
 }
 
 .sendBtn {
-  background: #d6ff00;
+  background: var(--middle-brown);
+  color: var(--milk);
   border: none;
   padding: 0.75rem 1.25rem;
   font-size: 1rem;
@@ -87,21 +85,21 @@
 }
 
 .arrowBtn {
-  background: #c2ff00;
+  background: var(--middle-brown);
   border-radius: 50%;
   padding: 0.75rem 1rem;
   font-size: 1.25rem;
-  color: #000;
+  color: var(--milk);
   font-weight: bold;
   cursor: pointer;
 }
 
-/* --- Brand --- */
+
 .brand {
   text-align: center;
   font-size: 8vw;
   font-weight: 900;
-  color: #fff;
+  color: var(--milk);
   line-height: 1;
   margin-bottom: -4rem;
 }
@@ -113,7 +111,7 @@
 
 
 
-/* --- Bottom Bar --- */
+
 .bottomBar {
   padding: 0rem 2rem 2rem;
   border-top: 1px solid #333;
@@ -145,11 +143,11 @@
 }
 
 .links span a {
-  color: #c0f;
+  color: var(--milk);
   font-weight: 500;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 768px) {
   .topSection {
     flex-direction: column;
