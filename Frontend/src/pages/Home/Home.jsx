@@ -1,6 +1,13 @@
+import Footer from "../../layout/Footer/Footer"
+
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <h1>Welcome to the Home Page</h1>
+
+
+      <Footer />
+    </div>
   )
 }
 

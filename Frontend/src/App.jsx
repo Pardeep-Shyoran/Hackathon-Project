@@ -3,7 +3,6 @@ import Header from "./layout/Header/Header"
 import MainRoutes from "./routes/MainRoutes"
 import { asyncCurrentUser } from "./features/user/userActions";
 import { useEffect } from "react";
-import Footer from "./layout/Footer/Footer";
 
 const App = () => {
 
@@ -18,7 +17,6 @@ const App = () => {
     <div>
       <Header />
       <MainRoutes />
-      <Footer />
     </div>
   )
 }

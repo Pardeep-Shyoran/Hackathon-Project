@@ -1,6 +1,13 @@
+import Footer from "../../layout/Footer/Footer"
+
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <h1>About Us</h1>
+
+
+      <Footer />
+    </div>
   )
 }
 

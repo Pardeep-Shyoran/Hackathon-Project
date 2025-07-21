@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { asyncUpdateUser } from "../../features/user/userActions";
 import styles from "./Cart.module.css";
+import Footer from "../../layout/Footer/Footer"; // Assuming Footer is still needed
 
 const Cart = () => {
     const dispatch = useDispatch();
@@ -83,6 +84,9 @@ const Cart = () => {
                 <span>Checkout :</span>
                 {/* <span>₹ {totalPrice.toFixed(2)}</span> */}
             </div>
+
+            <Footer />
+
         </div>
     );
 };
