@@ -1,10 +1,10 @@
 import Footer from "../../layout/Footer/Footer"
+import AboutCard from "../../components/AboutCard/AboutCard";
 
 const About = () => {
   return (
     <div>
-      <h1>About Us</h1>
-
+      <AboutCard />
 
       <Footer />
     </div>
