@@ -736,6 +736,15 @@
 @media (max-width: 400px) {
 	.titleBlock {
 		padding: 0.5rem 0 !important;
+		font-size: 3rem;
+	}
+	.title {
+		font-size: 3rem;
+	}
+	.questions {
+		font-size: 1.04rem;
+		padding: 6px 7px;
+		font-size: 3rem;
 	}
 	.faqSection {
 		padding: 4px 0;
@@ -748,13 +757,6 @@
 	.faqAnswer {
 		font-size: 0.82rem;
 		padding: 7px 4px;
-	}
-	.questions {
-		font-size: 1.04rem;
-		padding: 6px 7px;
-	}
-	.title {
-		font-size: 1.07rem;
 	}
 }
 
@@ -776,8 +778,8 @@
 
 /* If you want even better scaling, you can use clamp() for font sizes */
 .title {
-	font-size: clamp(2rem, 7vw, 8rem);
+	font-size: clamp(3rem, 7vw, 8rem);
 }
 .questions {
-	font-size: clamp(1.2rem, 5vw, 4rem);
+	font-size: clamp(3rem, 5vw, 4rem);
 }

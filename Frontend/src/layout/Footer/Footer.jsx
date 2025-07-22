@@ -26,8 +26,10 @@ const Footer = () => {
                     <h3>Still have questions?</h3>
                     <div className={styles.emailForm}>
                         <input type="email" placeholder="Enter your email" />
+                        <div className={styles.sendBtnContainer}>
                         <button className={styles.sendBtn}>Send</button>
                         <div className={styles.arrowBtn}>&#8594;</div>
+                        </div>
                     </div>
                 </div>
             </div>
