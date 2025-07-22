@@ -12,6 +12,7 @@ import Personal from "../pages/Profile/Personal"
 import UpdateUserProfile from "../pages/Profile/UpdateUserProfile"
 import Cart from "../pages/Cart/Cart"
 import Contact from "../pages/Contact/Contact"
+import TastyTalks from "../pages/TastyTalks/TastyTalks"
 
 
 
@@ -25,6 +26,7 @@ const MainRoutes = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/tasty-talks" element={<TastyTalks />} />
 
             {users ? <>
                 <Route path="/user/profile" element={<Profile />} />
