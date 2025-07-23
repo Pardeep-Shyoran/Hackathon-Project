@@ -1,0 +1,184 @@
+/* Section container */
+.messageContent {
+    font-family: var(--font-family2);
+	background-color: var(--brown2); /* Tailwind: bg-[#7f3b2d] */
+	color: var(--milk); /* text-milk approx */
+	min-height: 100svh; /* min-h-dvh */
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 20;
+}
+
+/* Container matching 'container mx-auto flex-center py-28 relative' */
+.container {
+	width: 100%;
+	max-width: 1280px; /* typical container max */
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 7rem; /* py-28 is 7rem top and bottom */
+	padding-bottom: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	height: 100%;
+}
+
+/* Wrapper around inner content (w-full h-full) */
+.innerWrapper {
+	width: 100%;
+	height: 100%;
+}
+
+/* msgWrapper: flex-column, font bold uppercase, responsive big text and gap */
+.msgWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 9vw;
+	letter-spacing: -0.35vw;
+	gap: 3.5rem;
+
+	font-size: 3rem; /* base approx Tailwind text-5xl */
+}
+
+/* first-message style: width + color + center */
+.firstMessage {
+	max-width: 20rem; /* 320px, max-w-xs */
+	color: rgba(250, 234, 222, 0.06); /* #faeade10 */
+	text-align: center;
+	margin: 0;
+}
+
+/* second-message style */
+.secondMessage {
+	max-width: 20rem; /* max-w-xs */
+	color: rgba(250, 234, 222, 0.06);
+	text-align: center;
+	margin: 0;
+}
+
+/* Clip-path container "Fuel Up" box */
+.msgTextScroll {
+	position: absolute;
+	z-index: 10;
+	border: 0.5vw solid var(--brown2);
+	clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	transform: rotate(3deg) translateY(1.25rem);
+	background-color: transparent;
+}
+
+/* Inner fuel up wrapper styles matching bg-light-brown md:pb-5 pb-3 px-5 */
+.fuelUpWrapper {
+	background-color: var(--light-brown); /* approximate light brown */
+	padding: 0 1.25rem 1.25rem;
+}
+
+/* h2 text-red-brown */
+.fuelUpHeading {
+	color: var(--brown2); /* approx text-red-brown */
+	margin: 0;
+	line-height: 1;
+}
+
+/* Wrapper matching 'flex-center md:mt-20 mt-10' */
+.paragraphWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2.5rem; /* mt-10 */
+}
+
+/* Paragraph container with max-width and padding */
+.paragraphContainer {
+	max-width: 30rem; /* max-w-md */
+	padding-left: 2.5rem; /* px-10 */
+	padding-right: 2.5rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Paragraph text styling */
+.paragraph {
+	font-family: "YourParagraphFont", sans-serif; /* Replace or remove */
+	text-align: center;
+	margin: 0;
+}
+
+/* Reset margins and line-height for headings */
+h1,
+h2 {
+	margin: 0;
+	line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1536px) {
+    .msgWrapper {
+        font-size: 8.5rem; /* 2xl:text-[8.5rem] */
+    }
+    .firstMessage {
+        max-width: 56rem; /* 2xl:max-w-4xl */
+    }
+    .secondMessage {
+        max-width: 112rem; /* 2xl:max-w-7xl */
+    }
+}
+
+
+
+@media (min-width: 768px) {
+	.msgWrapper {
+		font-size: 4.5rem; /* md:8xl approx 4.5rem */
+		gap: 6rem; /* md:gap-24 */
+	}
+    .firstMessage {
+		max-width: 45rem; /* md:max-w-2xl */
+	}
+    .secondMessage {
+		max-width: 64rem; /* md:max-w-4xl */
+	}
+    .paragraphWrapper {
+		margin-top: 5rem; /* md:mt-20 */
+	}
+}
+
+
+
+
+
+
+
+@media (max-width: 1535px) {
+	.msgTextScroll {
+		transform: rotate(3deg) translateY(-.25rem);
+	}
+}
+
+
+
+@media (max-width: 767px) {
+	.fuelUpWrapper {
+		padding-bottom: 0.75rem; /* pb-3 = 0.75rem on mobile */
+	}
+}
+
+
