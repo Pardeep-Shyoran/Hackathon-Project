@@ -90,6 +90,8 @@ const FlavorSlider = () => {
 
             <Link to="/shop" className={styles.imgWrapper}>
                 <img src="https://res.cloudinary.com/dcaggtr9h/image/upload/v1752757867/Frame_3_1_hahfe4.png" alt="" />
+
+                <span className={styles.tooltip}>See All Flavours!</span>
             </Link>
 
         {/* <div className={styles.productsContainer}>
