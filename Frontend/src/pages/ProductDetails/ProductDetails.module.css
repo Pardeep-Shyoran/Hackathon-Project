@@ -184,7 +184,7 @@
   font-size: 4rem;
   background-color: var(--milk);
   border-bottom: 2px solid var(--brown2);
-  border-radius: 4px;
+  border-radius: 0.6rem;
   padding: 0.75rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
