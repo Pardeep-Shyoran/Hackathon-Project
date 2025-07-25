@@ -1,7 +1,9 @@
 .flavorSection {
+  position: relative;
   min-height: 100vh;
   background-color: var(--milk);
   width: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -22,6 +24,9 @@
 .rightPane {
   height: 100%;
   width: 100%;
+  /* position: absolute;
+  right: 5%; */
+  display: none;
 }
 
 
@@ -38,6 +43,14 @@
 @media (min-width: 768px) {
   .leftPane {
     margin-top: 0rem;
+    height: 100%;
+    width: 57%;
+  }
+  .rightPane{
+    display: block;
+  }
+  .container {
+    flex-direction: row;
   }
 }
 
@@ -48,12 +61,15 @@
 }
 
 @media (min-width: 1280px) {
+  .container {
+    flex-direction: row;
+  }
   .leftPane {
     margin-top: 0rem;
   }
   .leftPane {
     height: 100%;
-    width: 68%;
+    width: 57%;
   }
 }
 

@@ -17,7 +17,7 @@ const FlavorSection = () => {
                     <FlavorTitle />
                 </div>
                 <div className={styles.rightPane}>
-                    {/* <FlavorSlider /> */}
+                    <FlavorSlider />
                 </div>
             </div>
         </section>

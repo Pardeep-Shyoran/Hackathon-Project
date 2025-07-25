@@ -70,7 +70,7 @@ const HeroSection = () => {
     });
 
     return (
-        <section className="bg-main-bg">
+        <section className={styles["bg-main-bg"]}>
             <div className={styles.heroContainer}>
                 {/* {isTablet ? (
                     <>
@@ -97,6 +97,12 @@ const HeroSection = () => {
                     />
                 )} */}
                 <div className={styles.heroContent}>
+                <div className={styles.heroImageLeft}>
+                    <img src="https://res.cloudinary.com/dcaggtr9h/image/upload/v1752757867/Frame_2_2_rtrmko.png" alt="" />
+                </div>
+                <div className={styles.heroImageRight}>
+                    <img src="https://res.cloudinary.com/dcaggtr9h/image/upload/v1752757867/Frame_2_2_rtrmko.png" alt="" />
+                </div>
                     <div className="overflow-hidden">
                         <h1 className={styles.heroTitle}>Freaking Delicious</h1>
                     </div>

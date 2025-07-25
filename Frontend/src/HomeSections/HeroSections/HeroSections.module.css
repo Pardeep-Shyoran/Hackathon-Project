@@ -6,7 +6,26 @@
   overflow: hidden;
   font-family: var(--font-family2);
   padding-bottom: 3rem;
+  /* background: url("https://res.cloudinary.com/dcaggtr9h/image/upload/v1753059393/Copilot_20250721_062617_xbzxj3.png") no-repeat center top; */
+  /* filter: blur(10px); */
 }
+
+.heroImageLeft {
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  left: -12rem;
+  transform: rotate(32deg);
+}
+
+.heroImageRight {
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  right: -12rem;
+  transform: rotate(-32deg);
+}
+
 
 .heroContent {
   position: relative;
@@ -29,7 +48,8 @@
   line-height: 9vw;
   letter-spacing: -0.35vw;
   margin-bottom: 1.25rem;
-  font-size: 3.3rem;
+  font-size: 2.8rem;
+  /* filter: drop-shadow(0 0 0.5rem var(--dark-brown)); */
 }
 
 
@@ -54,13 +74,13 @@
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-bottom: 1.25rem;
-  font-size: 3.3rem;
+  font-size: 2.8rem;
   margin: 0;
 }
 
 .heroContent h2 {
   font-family: var(--font-family5); 
-  color: #4a2d18;
+  color: var(--dark-brown);
   text-align: center;
   max-width: 24rem;
   padding-left: 1.25rem;
@@ -69,11 +89,12 @@
   font-size: 1rem;
   line-height: 1.15;
   font-weight: 400;
+  /* filter: drop-shadow(0 0 0.8rem var(--black)); */
 }
 
 .heroButton {
   margin-top: 2.5rem;
-  color: #4a2d18;
+  color: var(--milk);
   background-color: var(--light-brown);
   text-transform: uppercase;
   font-weight: 700;
@@ -82,6 +103,9 @@
   padding: .8rem 4rem;
   cursor: pointer;
 }
+
+
+
 
 
 
@@ -106,6 +130,23 @@
     margin-top: 2.5rem;
     padding: 0.2rem 2.5rem;
   }
+  .heroImageLeft {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: -12rem;
+  /* filter: blur(2px); */
+  transform: rotate(32deg);
+}
+
+.heroImageRight {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  right: -12rem;
+  /* filter: blur(2px); */
+  transform: rotate(-32deg);
+}
 }
 
 
