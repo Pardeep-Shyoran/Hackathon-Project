@@ -13,12 +13,12 @@ const Footer = () => {
             <div className={styles.topSection}>
                 <div className={styles.nav}>
                     <ul>
-                        <li>Technology</li>
+                            <li>Expertise</li>
                         <li>Products</li>
                     </ul>
                     <ul>
-                        <li>Expertise</li>
-                        <li>Key features</li>
+                        <li>Shipping Policy</li>
+                        <li>Customer Service</li>
                     </ul>
                 </div>
 
@@ -43,7 +43,7 @@ const Footer = () => {
                 <div className={styles.links}>
                     <a href="#">Privacy Policy</a>
                     <a href="#">Cookies Policy</a>
-                    <span>Website by <NavLink to="" target="_blank">Pardeep Shyoran</NavLink></span>
+                        <span>Website by <NavLink to="https://github.com/Pardeep-Shyoran/" target="_blank">Pardeep Shyoran</NavLink></span>
                 </div>
             </div>
         </footer>
