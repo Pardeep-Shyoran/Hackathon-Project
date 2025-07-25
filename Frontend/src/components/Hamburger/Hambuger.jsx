@@ -160,11 +160,11 @@ const Hambuger = () => {
                                 <NavLink target='_blank' className={styles["hamburger-social-link"]} to={"https://youtube.com/@letsfokuschannel"}>
                                     YouTube
                                 </NavLink>
-                                <NavLink target='_blank' className={styles["hamburger-social-link"]} to={"https://www.instagram.com"}>
+                                <NavLink target='_blank' className={styles["hamburger-social-link"]} to={"https://www.instagram.com/letsfokus"}>
                                     Instagram
                                 </NavLink>
-                                <NavLink target='_blank' className={styles["hamburger-social-link"]} to={"https://www.linkedin.com"}>
-                                    Linkedin
+                                <NavLink target='_blank' className={styles["hamburger-social-link"]} to={"https://x.com/letsfokus"}>
+                                    X (Twitter)
                                 </NavLink>
                             </div>
                         </div>
