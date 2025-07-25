@@ -1,0 +1,323 @@
+/* .generalTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 94vh;
+  gap: 4rem;
+  font-family: var(--font-family2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--milk);
+}
+
+.firstTextSplit, .secondTextSplit {
+  overflow: hidden;
+  padding-top: 0.75rem;   
+  padding-bottom: 0.75rem; 
+}
+
+.firstTextSplit h1 {
+  line-height: 9vw;
+  color: var(--dark-brown); 
+  text-align: left;
+  font-size: 7.4rem;
+  text-transform: uppercase;
+  letter-spacing: -.35vw;
+}
+
+
+.secondTextSplit h1 {
+  letter-spacing: -.35vw;
+  line-height: 9vw;
+  font-size: 7.4rem;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 0 2rem;
+}
+
+.flavorTextScroll {
+  letter-spacing: -.35vw;
+  line-height: 9vw;
+  font-family: var(--font-family2);
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 10;
+  transform: rotate(-3deg);
+  border-width: 0.5vw;
+  border-style: solid;
+  border-color: var(--milk); 
+  font-size: 5rem;
+}
+
+.flavorTextScrollInner {
+  background: var(--middle-brown); 
+  padding-bottom: 1.25rem; 
+  padding-top: 0.75rem;   
+  padding-left: 0.75rem; 
+  padding-right: 0.75rem; 
+}
+
+
+.flavorTextScrollText {
+  color: var(--milk);
+}
+
+
+
+@media (min-width: 1536px) {
+  .generalTitle {
+    gap: 8rem;
+  }
+  .firstTextSplit,
+  .secondTextSplit {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .flavorTextScrollInner {
+    padding-top: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .generalTitle {
+    gap: 7rem; 
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  .firstTextSplit h1 {
+    text-align: center; 
+  }
+  .secondTextSplit h1 {
+    text-align: center; 
+  }
+  .flavorTextScroll {
+    transform: rotate(-3deg) translateY(0.25rem); 
+  }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .generalTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* combine align-items + justify-content */
+  height: 94vh;
+  gap: 4rem;
+  font-family: var(--font-family2);
+  background-color: var(--milk);
+  padding: 1rem;
+}
+
+/* Make gaps responsive with clamp */
+@media (min-width: 640px) {
+  .generalTitle {
+    gap: clamp(2rem, 5vw, 7rem);
+  }
+}
+
+.firstTextSplit,
+.secondTextSplit {
+  overflow: hidden;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 100%;
+}
+
+.firstTextSplit h1,
+.secondTextSplit h1 {
+  line-height: 9vw;
+  font-size: clamp(3rem, 7.8vw, 7.8rem);
+  text-transform: uppercase;
+  letter-spacing: -0.35vw;
+  color: var(--dark-brown);
+  text-align: center; /* default centered for mobile */
+  padding: 0 1rem;
+}
+
+/* Specific color only for firstTextSplit */
+.firstTextSplit h1 {
+  text-align: left;
+}
+
+.secondTextSplit h1 {
+  text-align: left;
+  padding: 0 2rem;
+}
+
+/* For tablets and up, center text */
+@media (min-width: 768px) {
+  .firstTextSplit h1,
+  .secondTextSplit h1 {
+    text-align: center;
+  }
+  .flavorTextScroll {
+    transform: rotate(-3deg) translateY(0.25rem);
+  }
+}
+
+/* Larger screen fix padding */
+@media (min-width: 1280px) {
+  .generalTitle {
+    gap: 7rem;
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1536px) {
+  .generalTitle {
+    gap: 8rem;
+  }
+  .firstTextSplit,
+  .secondTextSplit {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .flavorTextScrollInner {
+    padding-top: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+
+/* flavorTextScroll */
+
+.flavorTextScroll {
+  position: absolute;
+  z-index: 10;
+  transform: rotate(-3deg);
+  /* background: var(--middle-brown); */
+  border: 0.5vw solid var(--milk);
+  font-family: var(--font-family2);
+  font-size: clamp(2rem, 6vw, 7rem);
+  letter-spacing: -0.35vw;
+  line-height: 1;
+  text-transform: uppercase;
+  /* padding: 0.5rem 0.75rem; */
+  color: var(--milk);
+  max-width: 90vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.flavorTextScrollInner {
+  background: var(--middle-brown); 
+  padding: .25rem 0.75rem 1.25rem 0.75rem;
+}
+
+/* Adjust rotation and size on smaller screens */
+@media (max-width: 640px) {
+  .flavorTextScroll {
+    font-size: 2rem;
+    border-width: 0.3vw;
+    transform: rotate(-3deg) translateY(0.5rem);
+    max-width: 80vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+ /* .generalTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 4rem;
+}
+
+.flavorTextScroll {
+  transform: rotate(-3deg) translateY(1.25rem);
+  border: 0.5vw solid #fff6ea;
+  position: absolute;
+  z-index: 10;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.firstTextSplit h1,
+.secondTextSplit h1 {
+  text-align: center;
+  color: #57310d; 
+} */
+
+/* .secondTextSplit h1 {
+ 
+} */
+
+/* .bgMidBrown {
+  background: #a67c5b; 
+  padding-bottom: 1.25rem;
+  padding-top: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.textMilk {
+  color: #fff6ea;
+} */
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 1280px) {
+  .generalTitle {
+    gap: 6rem;
+  }
+}
+@media (min-width: 1536px) {
+  .generalTitle {
+    gap: 8rem;
+  }
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1536px) {
+  .bgMidBrown {
+    padding-top: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+} */
+
+

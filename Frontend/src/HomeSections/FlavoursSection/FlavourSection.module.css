@@ -1,0 +1,61 @@
+.flavorSection {
+  min-height: 100vh;
+  background-color: var(--milk);
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.leftPane {
+  flex-shrink: 0; 
+  height: 100vh; 
+  width: 100%;
+  margin-top: 5rem; 
+}
+
+.rightPane {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .leftPane {
+    margin-top: 0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1280px) {
+  .leftPane {
+    margin-top: 0rem;
+  }
+  .leftPane {
+    height: 100%;
+    width: 68%;
+  }
+}
+
+
+

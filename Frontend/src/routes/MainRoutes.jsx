@@ -13,6 +13,8 @@ import UpdateUserProfile from "../pages/Profile/UpdateUserProfile"
 import Cart from "../pages/Cart/Cart"
 import Contact from "../pages/Contact/Contact"
 import TastyTalks from "../pages/TastyTalks/TastyTalks"
+import Shop from "../pages/Shop/Shop"
+import ProductDetails from "../pages/ProductDetails/ProductDetails"
 
 
 
@@ -27,6 +29,8 @@ const MainRoutes = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/tasty-talks" element={<TastyTalks />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/shop/:id" element={<ProductDetails />} />
 
             {users ? <>
                 <Route path="/user/profile" element={<Profile />} />

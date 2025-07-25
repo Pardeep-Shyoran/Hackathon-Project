@@ -15,7 +15,7 @@ const Login = () => {
     try {
       dispatch(asyncLoginUser(user));
       // console.log(user);
-      navigate("/products");
+      navigate("/shop");
       toast.success("Logged in successfully!");
     } catch (err) {
       // alert(err.message);

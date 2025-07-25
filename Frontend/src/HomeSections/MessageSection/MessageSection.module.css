@@ -169,16 +169,28 @@ h2 {
 
 @media (max-width: 1535px) {
 	.msgTextScroll {
-		transform: rotate(3deg) translateY(-.25rem);
+		transform: rotate(3deg) translateY(1.25rem);
 	}
 }
 
 
 
-@media (max-width: 767px) {
-	.fuelUpWrapper {
-		padding-bottom: 0.75rem; /* pb-3 = 0.75rem on mobile */
+@media (max-width: 900px) {
+	.msgTextScroll {
+		transform: rotate(3deg) translateY(-2.25rem);
 	}
+}
+@media (max-width: 767px) {
+	.msgTextScroll {
+		transform: rotate(3deg) translateY(-4.25rem);
+	}
+	
+}
+@media (max-width: 400px) {
+	.msgTextScroll {
+		transform: rotate(3deg) translateY(-2.25rem);
+	}
+	
 }
 
 

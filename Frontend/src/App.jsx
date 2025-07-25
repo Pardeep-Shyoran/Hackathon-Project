@@ -5,6 +5,7 @@ import { asyncCurrentUser } from "./features/user/userActions";
 import OpeningAnimation from "./components/OpeningAnimation/OpeningAnimation";
 import { useEffect } from "react";
 import Splash from "./components/Splash/Splash"
+import { asyncLoadProducts } from "./features/Product/productActions";
 
 const App = () => {
 
@@ -14,6 +15,14 @@ const App = () => {
   useEffect(() => {
     !users && dispatch(asyncCurrentUser());
   }, [users]);
+
+  const { products } = useSelector((state) => state.productReducer);
+
+
+
+  useEffect(() => {
+    products.length == 0 && dispatch(asyncLoadProducts());
+  }, [products]);
 
   return (
     // <Splash>

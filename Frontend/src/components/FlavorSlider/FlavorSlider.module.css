@@ -1,0 +1,144 @@
+/* Wrapper for the entire slider component */
+.sliderWrapper {
+  min-height: 100dvh;
+  width: 100%;
+  margin-top: 0;
+}
+@media (min-width: 1024px) {
+  .sliderWrapper {
+    height: 100dvh;
+    min-height: 100dvh;
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .sliderWrapper {
+    min-height: fit-content;
+    margin-top: 5rem; /* md:mt-20 */
+  }
+}
+@media (min-width: 1280px) {
+  .sliderWrapper {
+    margin-top: 0;
+  }
+}
+
+/* Container for flavor cards */
+.flavors {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1.75rem; /* gap-7 */
+}
+@media (min-width: 768px) {
+  .flavors {
+    flex-direction: row;
+    gap: 6rem; /* md:gap-24 */
+  }
+}
+@media (min-width: 1024px) {
+  .flavors {
+    gap: 13rem; /* lg:gap-52 */
+  }
+}
+@media (min-width: 1536px) {
+  .flavors {
+    gap: 18rem; /* 2xl:gap-72 */
+  }
+}
+
+/* Individual flavor card */
+.flavorCard {
+  position: relative;
+  z-index: 30;
+  width: 24rem;       /* w-96 */
+  height: 20rem;      /* h-80 */
+  flex: none;
+  /* override with media queries below if needed */
+}
+@media (min-width: 768px) {
+  .flavorCard {
+    width: 90vw;      /* md:w-[90vw] */
+    height: 50vh;     /* md:h-[50vh] */
+  }
+}
+@media (min-width: 1024px) {
+  .flavorCard {
+    width: 50vw;      /* lg:w-[50vw] */
+    height: 70vh;     /* lg:h-[70vh] */
+  }
+}
+
+/* The "bg" SVG image */
+.bgImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* The drink image */
+.drinks {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 20rem;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .drinks {
+    height: 100%;
+  }
+}
+
+/* The additional elements image */
+.elements {
+  position: absolute;
+  bottom: 2.5rem; /* bottom-10 */
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  top: auto;
+}
+@media (min-width: 768px) {
+  .elements {
+    top: 0;
+    bottom: auto;
+  }
+}
+
+/* Slide flavor name/title */
+.sliderTitle {
+  position: absolute;
+  left: 1.25rem;   /* left-5 */
+  bottom: 1.25rem; /* bottom-5 */
+  color: #fff8f0;  /* text-milk */
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 600; /* font-semibold */
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .sliderTitle {
+    font-size: 3.75rem; /* md:text-6xl */
+    left: 2.5rem;       /* md:left-10 */
+    bottom: 2.5rem;     /* md:bottom-10 */
+  }
+}
+
+/* Optionally: handle rotation classes if needed! (e.g. .rotate-[-3deg]) */
+.rotateMinus3deg {
+  transform: rotate(-3deg);
+}
+.rotateMinus6deg {
+  transform: rotate(-6deg);
+}
+.rotate3deg {
+  transform: rotate(3deg);
+}

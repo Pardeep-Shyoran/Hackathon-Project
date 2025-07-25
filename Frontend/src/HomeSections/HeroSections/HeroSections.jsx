@@ -14,55 +14,59 @@ const HeroSection = () => {
     });
 
     useGSAP(() => {
-        const titleSplit = SplitText.create(`.${styles.heroTitle}`, {
-            type: "chars",
+        document.fonts.ready.then(() => {
+
+            const titleSplit = SplitText.create(`.${styles.heroTitle}`, {
+                type: "chars",
+            });
+
+
+            const tl = gsap.timeline({
+                delay: 1,
+            });
+
+            tl.to(`.${styles.heroContent}`, {
+                opacity: 1,
+                y: 0,
+                ease: "power1.inOut",
+            })
+                .to(
+                    `.${styles.heroTextScroll}`,
+                    {
+                        duration: 1,
+                        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                        ease: "circ.out",
+                    },
+                    "-=0.5"
+                )
+                .from(
+                    titleSplit.chars,
+                    {
+                        yPercent: 150,
+                        opacity: 0,
+                        stagger: 0.02,
+                        ease: "power2.out",
+                    },
+                    "-=0.5"
+                );
+
+            // const heroTl = gsap.timeline({
+            //     scrollTrigger: {
+            //         trigger: `.${styles.heroContainer}`,
+            //         start: "1% top",
+            //         end: "bottom top",
+            //         scrub: true,
+            //     },
+            // });
+            // heroTl.to(`.${styles.heroContainer}`, {
+            //     rotate: 7,
+            //     scale: 0.9,
+            //     yPercent: 30,
+            //     ease: "power1.inOut",
+            // });
+
+
         });
-
-        const tl = gsap.timeline({
-            delay: 1,
-        });
-
-        tl.to(`.${styles.heroContent}`, {
-            opacity: 1,
-            y: 0,
-            ease: "power1.inOut",
-        })
-            .to(
-                `.${styles.heroTextScroll}`,
-                {
-                    duration: 1,
-                    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-                    ease: "circ.out",
-                },
-                "-=0.5"
-            )
-            .from(
-                titleSplit.chars,
-                {
-                    yPercent: 150,
-                    opacity: 0,
-                    stagger: 0.02,
-                    ease: "power2.out",
-                },
-                "-=0.5"
-            );
-
-        // const heroTl = gsap.timeline({
-        //     scrollTrigger: {
-        //         trigger: `.${styles.heroContainer}`,
-        //         start: "1% top",
-        //         end: "bottom top",
-        //         scrub: true,
-        //     },
-        // });
-        // heroTl.to(`.${styles.heroContainer}`, {
-        //     rotate: 7,
-        //     scale: 0.9,
-        //     yPercent: 30,
-        //     ease: "power1.inOut",
-        // });
-
-        
     });
 
     return (
@@ -103,7 +107,7 @@ const HeroSection = () => {
                         className={styles.heroTextScroll}
                     >
                         <div className={styles.heroSubtitle}>
-                            <h1>Coconut + Caffine </h1>
+                            <h1>Coconut + Vitamins </h1>
                         </div>
                     </div>
 
