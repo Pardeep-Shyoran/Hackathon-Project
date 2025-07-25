@@ -9,9 +9,11 @@ import { toast } from "react-toastify";
 import { asyncUpdateUser } from "../../features/user/userActions";
 import styles from "./ProductDetails.module.css";
 import Footer from "../../layout/Footer/Footer";
+import { useState } from "react";
 
 const ProductDetails = () => {
     const { id } = useParams();
+    const [openIndex, setOpenIndex] = useState(null);
 
     const {
         productReducer: { products },
@@ -58,6 +60,10 @@ const ProductDetails = () => {
         dispatch(asyncUpdateUser(copyuser.id, copyuser));
     };
 
+    const toggleIngredient = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
     return product ? (
         <div className={styles.wrapper}>
 
@@ -78,6 +84,25 @@ const ProductDetails = () => {
                             Add to Cart
                         </button>
                     </div>
+                </div>
+            </div>
+
+            <div className={styles.container}>
+                <h1 className={styles.title}>{product?.name} Ingredients</h1>
+                <div className={styles.ingredientList}>
+                    {product?.ingredients.map((item, index) => (
+                        <div
+                            key={index}
+                            className={`${styles.ingredientItem} ${openIndex === index ? styles.open : ""
+                                }`}
+                            onClick={() => toggleIngredient(index)}
+                        >
+                            <div className={styles.ingredientHeader}>{item.name}</div>
+                            {openIndex === index && (
+                                <div className={styles.description}>{item.description}</div>
+                            )}
+                        </div>
+                    ))}
                 </div>
             </div>
 
