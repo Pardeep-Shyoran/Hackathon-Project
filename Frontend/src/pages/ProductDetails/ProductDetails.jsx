@@ -8,6 +8,7 @@ import {
 import { toast } from "react-toastify";
 import { asyncUpdateUser } from "../../features/user/userActions";
 import styles from "./ProductDetails.module.css";
+import Footer from "../../layout/Footer/Footer";
 
 const ProductDetails = () => {
     const { id } = useParams();
@@ -80,7 +81,7 @@ const ProductDetails = () => {
                 </div>
             </div>
 
-            
+            <Footer />
         </div>
     ) : (
         "Loading..."
