@@ -17,7 +17,7 @@ const Products = () => {
     (async () => {
       try {
         const { data } = await axios.get("/products");
-        console.log(data);
+        // console.log(data);
         setProducts(data); // <-- don't append
       } catch (e) {
         console.error(e);
