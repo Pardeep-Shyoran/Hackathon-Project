@@ -1,70 +1,70 @@
 {
-  "users": [
-    {
-      "id": "f127",
-      "image": "https://sepiastories.in/wp-content/uploads/2021/02/CORDOOrganicCottonDressYellow02.jpg",
-      "username": "Ban Rakas",
-      "email": "banrakas@panchayat.com",
-      "password": "@Banrakas2"
-    },
-    {
-      "id": "1dd5",
-      "image": "https://play-lh.googleusercontent.com/vco-LT_M58j9DIAxlS1Cv9uvzbRhB6cYIZJS7ocZksWRqoEPat_QXb6fVFi77lciJZQ=w526-h296-rw",
-      "username": "pard",
-      "email": "pa@em.com",
-      "password": "@Pard2004"
-    },
-    {
-      "id": "hbds6WC8cwYVLIHrExMve",
-      "image": "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?cs=srgb&dl=pexels-suliman-sallehi-1704488.jpg&fm=jpg",
-      "username": "Admin",
-      "email": "admin@email.com",
-      "password": "123",
-      "isAdmin": false,
-      "cart": []
-    },
-    {
-      "id": "ZD0l3cs5--mVbxUseZZtk",
-      "image": "https://tse4.mm.bing.net/th/id/OIP.5QylMk-hjGNwEP548-V_QQHaLF?rs=1&pid=ImgDetMain&o=7&rm=3",
-      "username": "pardeep",
-      "email": "pardeep@gmail.com",
-      "password": "@Pardeep2004",
-      "isAdmin": false,
-      "cart": []
-    }
-  ],
-  "products": [
-    {
-      "id": "4",
-      "title": "Fokus Hydration Pack of 3",
-      "price": 449.99,
-      "description": "Experience all three signature flavors of Fokus Hydration in one convenient combo—an ideal way to discover your favorite or enjoy a new taste every day!.",
-      "category": "Refreshing Drinks",
-      "image": "https://res.cloudinary.com/dcaggtr9h/image/upload/v1752751255/Copilot_20250717_165027_eyiwq6.png"
-    },
-    {
-      "id": "1",
-      "title": "Fokus Hydration - Strawberry Watermelon",
-      "price": 149.99,
-      "description": "A mellow and subtly sweet blend that captures summer in a bottle. The delicate taste of strawberry harmonizes with crisp watermelon, offering a light and truly refreshing flavour ideal for cooling off while staying nourished and focused",
-      "category": "Refreshing Drinks",
-      "image": "https://res.cloudinary.com/dcaggtr9h/image/upload/v1752751751/Copilot_20250717_165848_tuhuak.png"
-    },
-    {
-      "id": "2",
-      "title": "Fokus Hydration - Kiwi Lemon",
-      "price": 149.99,
-      "description": "A tangy, citrus‑fresh fusion that pairs the bright zing of lemon with the unique sweetness of ripe kiwi. Energizing yet light, it's packed with electrolytes to replenish your body with every sip. Ideal for those seeking a refreshing, clean taste with a hydrating punch.",
-      "category": "Refreshing Drinks",
-      "image": "https://res.cloudinary.com/dcaggtr9h/image/upload/v1752752281/Copilot_20250717_170734_bi2vdz.png"
-    },
-    {
-      "id": "3",
-      "title": "Fokus Hydration - Mango Pineapple",
-      "price": 149.99,
-      "description": "Exotic and tropical, this flavour marries the succulent sweetness of mango with juicy pineapple. It balances tropical fruitiness with the functional benefits of coconut water and ginseng, giving a juicy, revitalizing experience that supports both hydration and recovery.",
-      "category": "Refreshing Drinks",
-      "image": "https://res.cloudinary.com/dcaggtr9h/image/upload/v1752752754/Copilot_20250717_171402_o0kjtz.png"
-    }
-  ]
+	"users": [
+		{
+			"id": "f127",
+			"image": "https://sepiastories.in/wp-content/uploads/2021/02/CORDOOrganicCottonDressYellow02.jpg",
+			"username": "Ban Rakas",
+			"email": "banrakas@panchayat.com",
+			"password": "@Banrakas2"
+		},
+		{
+			"id": "1dd5",
+			"image": "https://play-lh.googleusercontent.com/vco-LT_M58j9DIAxlS1Cv9uvzbRhB6cYIZJS7ocZksWRqoEPat_QXb6fVFi77lciJZQ=w526-h296-rw",
+			"username": "pard",
+			"email": "pa@em.com",
+			"password": "@Pard2004"
+		},
+		{
+			"id": "hbds6WC8cwYVLIHrExMve",
+			"image": "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?cs=srgb&dl=pexels-suliman-sallehi-1704488.jpg&fm=jpg",
+			"username": "Admin",
+			"email": "admin@email.com",
+			"password": "123",
+			"isAdmin": false,
+			"cart": []
+		},
+		{
+			"id": "ZD0l3cs5--mVbxUseZZtk",
+			"image": "https://tse4.mm.bing.net/th/id/OIP.5QylMk-hjGNwEP548-V_QQHaLF?rs=1&pid=ImgDetMain&o=7&rm=3",
+			"username": "pardeep",
+			"email": "pardeep@gmail.com",
+			"password": "@Pardeep2004",
+			"isAdmin": false,
+			"cart": []
+		}
+	],
+	"products": [
+		{
+			"id": "4",
+			"title": "Fokus Hydration Pack of 3",
+			"price": 449.99,
+			"description": "Experience all three signature flavors of Fokus Hydration in one convenient combo—an ideal way to discover your favorite or enjoy a new taste every day!.",
+			"category": "Refreshing Drinks",
+			"image": "https://res.cloudinary.com/dcaggtr9h/image/upload/v1752751255/Copilot_20250717_165027_eyiwq6.png"
+		},
+		{
+			"id": "1",
+			"title": "Fokus Hydration - Strawberry Watermelon",
+			"price": 149.99,
+			"description": "A mellow and subtly sweet blend that captures summer in a bottle. The delicate taste of strawberry harmonizes with crisp watermelon, offering a light and truly refreshing flavour ideal for cooling off while staying nourished and focused",
+			"category": "Refreshing Drinks",
+			"image": "https://res.cloudinary.com/dcaggtr9h/image/upload/v1752751751/Copilot_20250717_165848_tuhuak.png"
+		},
+		{
+			"id": "2",
+			"title": "Fokus Hydration - Kiwi Lemon",
+			"price": 149.99,
+			"description": "A tangy, citrus‑fresh fusion that pairs the bright zing of lemon with the unique sweetness of ripe kiwi. Energizing yet light, it's packed with electrolytes to replenish your body with every sip. Ideal for those seeking a refreshing, clean taste with a hydrating punch.",
+			"category": "Refreshing Drinks",
+			"image": "https://res.cloudinary.com/dcaggtr9h/image/upload/v1752752281/Copilot_20250717_170734_bi2vdz.png"
+		},
+		{
+			"id": "3",
+			"title": "Fokus Hydration - Mango Pineapple",
+			"price": 149.99,
+			"description": "Exotic and tropical, this flavour marries the succulent sweetness of mango with juicy pineapple. It balances tropical fruitiness with the functional benefits of coconut water and ginseng, giving a juicy, revitalizing experience that supports both hydration and recovery.",
+			"category": "Refreshing Drinks",
+			"image": "https://res.cloudinary.com/dcaggtr9h/image/upload/v1752752754/Copilot_20250717_171402_o0kjtz.png"
+		}
+	]
 }
