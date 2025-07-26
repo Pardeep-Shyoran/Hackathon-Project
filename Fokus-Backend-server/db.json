@@ -44,53 +44,54 @@
 			"ingredients": [
 				{
 					"name": "Vitamin D3",
-					"description": "Supports immune system and bone health."
+					"description": "Lack of sunshine got your vibe down? Vitamin D3 steps in as your mood booster and immune system’s best friend. It’s like a sip of sunlight—strong bones, strong vibes."
 				},
 				{
 					"name": "Water",
-					"description": "Hydration base for all ingredients."
+					"description": "Pure water is the OG fuel for your body and brain, keeping you cool, calm, and collected—even on chaotic days."
 				},
 				{
 					"name": "Coconut Water (22%)",
-					"description": "Natural electrolytes and minerals."
+					"description": "Coconut water is nature’s hydration hack, packed with electrolytes to keep you refreshed and keep going."
 				},
 				{
 					"name": "Sucralose",
-					"description": "Zero-calorie sweetener for taste."
+					"description": "Sucralose brings the flavor, skips the calories, and keeps you on track. It’s your sweet fix, made smarter."
 				},
 				{
 					"name": "Taurine",
-					"description": "Supports cardiovascular function."
+					"description": "Taurine is the energy ninja that steps in to keep you focused and energized. Whether it’s work or play, this is the endurance boost you need."
 				},
 				{
 					"name": "Ginseng Extract",
-					"description": "Boosts energy and reduces fatigue."
+					"description": "Ginseng is your go-to for a natural boost. It powers up your focus and keeps you moving, no matter how long the day."
 				},
 				{
 					"name": "Ginkgo Biloba Extract",
-					"description": "Enhances memory and focus."
+					"description": "Ginkgo Biloba clears the mental clutter, improving focus and memory so you’re always on top of your game."
 				},
 				{
 					"name": "Creatine",
-					"description": "Supports muscle strength and endurance."
+					"description": "Creatine powers up your strength and recovery, turning your workouts into beast mode. Push harder, recover faster, and keep leveling up."
 				},
 				{
 					"name": "Glutamine",
-					"description": "Aids muscle recovery post-exercise."
+					"description": "Glutamine restores your energy like a pro and keeps your muscles and immunity in the game. Built for the grind."
 				},
 				{
 					"name": "LCLT (L-Carnitine L-Tartrate)",
-					"description": "Improves fat metabolism."
+					"description": "LCLT helps convert fat into fuel, giving you long-lasting energy and a metabolic edge."
 				},
 				{
 					"name": "5-HTP",
-					"description": "Promotes mood and sleep quality."
+					"description": "5-HTP restores balance, boosting serotonin levels to help you stay calm, happy, and in control."
 				},
 				{
 					"name": "Inositol",
-					"description": "Supports cognitive and emotional balance."
+					"description": "Inositol helps calm the overthinking and clears up your headspace. A relaxed mind ready to crush the day."
 				}
-			]
+			],
+			"bannerImage": "https://fokus.shop/cdn/shop/files/01_Fokus_front_page_copy.jpg?v=1738154247"
 		},
 		{
 			"id": "1",
@@ -102,53 +103,54 @@
 			"ingredients": [
 				{
 					"name": "Vitamin D3",
-					"description": "Supports immune system and bone health."
+					"description": "Lack of sunshine got your vibe down? Vitamin D3 steps in as your mood booster and immune system’s best friend. It’s like a sip of sunlight—strong bones, strong vibes."
 				},
 				{
 					"name": "Water",
-					"description": "Hydration base for all ingredients."
+					"description": "Pure water is the OG fuel for your body and brain, keeping you cool, calm, and collected—even on chaotic days."
 				},
 				{
 					"name": "Coconut Water (22%)",
-					"description": "Natural electrolytes and minerals."
+					"description": "Coconut water is nature’s hydration hack, packed with electrolytes to keep you refreshed and keep going."
 				},
 				{
 					"name": "Sucralose",
-					"description": "Zero-calorie sweetener for taste."
+					"description": "Sucralose brings the flavor, skips the calories, and keeps you on track. It’s your sweet fix, made smarter."
 				},
 				{
 					"name": "Taurine",
-					"description": "Supports cardiovascular function."
+					"description": "Taurine is the energy ninja that steps in to keep you focused and energized. Whether it’s work or play, this is the endurance boost you need."
 				},
 				{
 					"name": "Ginseng Extract",
-					"description": "Boosts energy and reduces fatigue."
+					"description": "Ginseng is your go-to for a natural boost. It powers up your focus and keeps you moving, no matter how long the day."
 				},
 				{
 					"name": "Ginkgo Biloba Extract",
-					"description": "Enhances memory and focus."
+					"description": "Ginkgo Biloba clears the mental clutter, improving focus and memory so you’re always on top of your game."
 				},
 				{
 					"name": "Creatine",
-					"description": "Supports muscle strength and endurance."
+					"description": "Creatine powers up your strength and recovery, turning your workouts into beast mode. Push harder, recover faster, and keep leveling up."
 				},
 				{
 					"name": "Glutamine",
-					"description": "Aids muscle recovery post-exercise."
+					"description": "Glutamine restores your energy like a pro and keeps your muscles and immunity in the game. Built for the grind."
 				},
 				{
 					"name": "LCLT (L-Carnitine L-Tartrate)",
-					"description": "Improves fat metabolism."
+					"description": "LCLT helps convert fat into fuel, giving you long-lasting energy and a metabolic edge."
 				},
 				{
 					"name": "5-HTP",
-					"description": "Promotes mood and sleep quality."
+					"description": "5-HTP restores balance, boosting serotonin levels to help you stay calm, happy, and in control."
 				},
 				{
 					"name": "Inositol",
-					"description": "Supports cognitive and emotional balance."
+					"description": "Inositol helps calm the overthinking and clears up your headspace. A relaxed mind ready to crush the day."
 				}
-			]
+			],
+			"bannerImage": "https://fokus.shop/cdn/shop/files/Fokus_strawberry_banner_copy.jpg?v=1737721048"
 		},
 		{
 			"id": "2",
@@ -160,53 +162,54 @@
 			"ingredients": [
 				{
 					"name": "Vitamin D3",
-					"description": "Supports immune system and bone health."
+					"description": "Lack of sunshine got your vibe down? Vitamin D3 steps in as your mood booster and immune system’s best friend. It’s like a sip of sunlight—strong bones, strong vibes."
 				},
 				{
 					"name": "Water",
-					"description": "Hydration base for all ingredients."
+					"description": "Pure water is the OG fuel for your body and brain, keeping you cool, calm, and collected—even on chaotic days."
 				},
 				{
 					"name": "Coconut Water (22%)",
-					"description": "Natural electrolytes and minerals."
+					"description": "Coconut water is nature’s hydration hack, packed with electrolytes to keep you refreshed and keep going."
 				},
 				{
 					"name": "Sucralose",
-					"description": "Zero-calorie sweetener for taste."
+					"description": "Sucralose brings the flavor, skips the calories, and keeps you on track. It’s your sweet fix, made smarter."
 				},
 				{
 					"name": "Taurine",
-					"description": "Supports cardiovascular function."
+					"description": "Taurine is the energy ninja that steps in to keep you focused and energized. Whether it’s work or play, this is the endurance boost you need."
 				},
 				{
 					"name": "Ginseng Extract",
-					"description": "Boosts energy and reduces fatigue."
+					"description": "Ginseng is your go-to for a natural boost. It powers up your focus and keeps you moving, no matter how long the day."
 				},
 				{
 					"name": "Ginkgo Biloba Extract",
-					"description": "Enhances memory and focus."
+					"description": "Ginkgo Biloba clears the mental clutter, improving focus and memory so you’re always on top of your game."
 				},
 				{
 					"name": "Creatine",
-					"description": "Supports muscle strength and endurance."
+					"description": "Creatine powers up your strength and recovery, turning your workouts into beast mode. Push harder, recover faster, and keep leveling up."
 				},
 				{
 					"name": "Glutamine",
-					"description": "Aids muscle recovery post-exercise."
+					"description": "Glutamine restores your energy like a pro and keeps your muscles and immunity in the game. Built for the grind."
 				},
 				{
 					"name": "LCLT (L-Carnitine L-Tartrate)",
-					"description": "Improves fat metabolism."
+					"description": "LCLT helps convert fat into fuel, giving you long-lasting energy and a metabolic edge."
 				},
 				{
 					"name": "5-HTP",
-					"description": "Promotes mood and sleep quality."
+					"description": "5-HTP restores balance, boosting serotonin levels to help you stay calm, happy, and in control."
 				},
 				{
 					"name": "Inositol",
-					"description": "Supports cognitive and emotional balance."
+					"description": "Inositol helps calm the overthinking and clears up your headspace. A relaxed mind ready to crush the day."
 				}
-			]
+			],
+			"bannerImage": "https://fokus.shop/cdn/shop/files/Fokus_Kiwi_banner_copy.jpg?v=1737721048"
 		},
 		{
 			"id": "3",
@@ -218,53 +221,54 @@
 			"ingredients": [
 				{
 					"name": "Vitamin D3",
-					"description": "Supports immune system and bone health."
+					"description": "Lack of sunshine got your vibe down? Vitamin D3 steps in as your mood booster and immune system’s best friend. It’s like a sip of sunlight—strong bones, strong vibes."
 				},
 				{
 					"name": "Water",
-					"description": "Hydration base for all ingredients."
+					"description": "Pure water is the OG fuel for your body and brain, keeping you cool, calm, and collected—even on chaotic days."
 				},
 				{
 					"name": "Coconut Water (22%)",
-					"description": "Natural electrolytes and minerals."
+					"description": "Coconut water is nature’s hydration hack, packed with electrolytes to keep you refreshed and keep going."
 				},
 				{
 					"name": "Sucralose",
-					"description": "Zero-calorie sweetener for taste."
+					"description": "Sucralose brings the flavor, skips the calories, and keeps you on track. It’s your sweet fix, made smarter."
 				},
 				{
 					"name": "Taurine",
-					"description": "Supports cardiovascular function."
+					"description": "Taurine is the energy ninja that steps in to keep you focused and energized. Whether it’s work or play, this is the endurance boost you need."
 				},
 				{
 					"name": "Ginseng Extract",
-					"description": "Boosts energy and reduces fatigue."
+					"description": "Ginseng is your go-to for a natural boost. It powers up your focus and keeps you moving, no matter how long the day."
 				},
 				{
 					"name": "Ginkgo Biloba Extract",
-					"description": "Enhances memory and focus."
+					"description": "Ginkgo Biloba clears the mental clutter, improving focus and memory so you’re always on top of your game."
 				},
 				{
 					"name": "Creatine",
-					"description": "Supports muscle strength and endurance."
+					"description": "Creatine powers up your strength and recovery, turning your workouts into beast mode. Push harder, recover faster, and keep leveling up."
 				},
 				{
 					"name": "Glutamine",
-					"description": "Aids muscle recovery post-exercise."
+					"description": "Glutamine restores your energy like a pro and keeps your muscles and immunity in the game. Built for the grind."
 				},
 				{
 					"name": "LCLT (L-Carnitine L-Tartrate)",
-					"description": "Improves fat metabolism."
+					"description": "LCLT helps convert fat into fuel, giving you long-lasting energy and a metabolic edge."
 				},
 				{
 					"name": "5-HTP",
-					"description": "Promotes mood and sleep quality."
+					"description": "5-HTP restores balance, boosting serotonin levels to help you stay calm, happy, and in control."
 				},
 				{
 					"name": "Inositol",
-					"description": "Supports cognitive and emotional balance."
+					"description": "Inositol helps calm the overthinking and clears up your headspace. A relaxed mind ready to crush the day."
 				}
-			]
+			],
+			"bannerImage": "https://fokus.shop/cdn/shop/files/Fokus_mango_banner_copy_1.jpg?v=1737723339"
 		}
 	]
 }

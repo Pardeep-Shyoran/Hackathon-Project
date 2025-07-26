@@ -106,6 +106,10 @@ const ProductDetails = () => {
                 </div>
             </div>
 
+            <div className={styles.productBanner} key={product.id}>
+                <img src={product.bannerImage} alt="" />
+            </div>
+
             <Footer />
         </div>
     ) : (
