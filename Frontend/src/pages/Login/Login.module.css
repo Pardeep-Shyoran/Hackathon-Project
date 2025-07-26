@@ -5,11 +5,15 @@
 	height: 80vh;
 	width: 100%;
 	gap: 2rem;
+	padding: 1rem;
+	flex-wrap: wrap;
+	box-sizing: border-box;
 }
 
 .login-header {
 	text-align: center;
 	width: 25%;
+	min-width: 280px;
 }
 
 .login-form {
@@ -18,8 +22,10 @@
 	gap: 1rem;
 	padding: 3rem;
 	width: 25%;
+	min-width: 280px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
 }
 
 .login-input {
@@ -32,11 +38,11 @@
 }
 
 .login-input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-    margin: 0;
-    padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem;
+	margin: 0;
+	padding: 0;
 	height: 3rem;
 }
 
@@ -49,6 +55,29 @@
 	font-size: 1rem;
 	cursor: pointer;
 }
+
 .login-button:hover {
 	background-color: var(--middle-brown);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+	.login {
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.login-header,
+	.login-form {
+		width: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	.login-header,
+	.login-form {
+		width: 90%;
+		padding: 2rem;
+	}
 }
