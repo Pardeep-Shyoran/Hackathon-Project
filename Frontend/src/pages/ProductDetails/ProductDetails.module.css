@@ -229,9 +229,9 @@
 
 
 @media (max-width: 768px) {
-  .wrapper {
-    /* padding: 8px; */
-  }
+  /* .wrapper {
+    padding: 8px;
+  } */
 
   .productCard {
     width: 95vw;
