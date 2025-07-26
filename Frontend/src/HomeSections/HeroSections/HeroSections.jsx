@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { SplitText } from "gsap/all";
 import { useMediaQuery } from "react-responsive";
 import styles from "./HeroSections.module.css";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
     const isMobile = useMediaQuery({
@@ -123,7 +124,7 @@ const HeroSection = () => {
                     </h2>
 
                     <div className={styles.heroButton}>
-                        <p>Chug a FOKUS</p>
+                        <Link className={styles.herobtnLink} to="/shop">Chug a FOKUS</Link>
                     </div>
                 </div>
             </div>
