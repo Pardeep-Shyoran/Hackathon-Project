@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { asyncLoginUser } from "../../features/user/userActions";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
 
@@ -25,6 +26,9 @@ const Login = () => {
 
   return (
     <div className={styles.login}>
+      <Helmet>
+        <title>FOKUS || Login</title>
+      </Helmet>
       <form onSubmit={handleSubmit(onSubmit)}
         className={styles["login-form"]}>
         <div className={styles["login-input-group"]}>

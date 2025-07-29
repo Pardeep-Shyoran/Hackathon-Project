@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { asyncUpdateUser } from "../../features/user/userActions";
 import styles from "./Cart.module.css";
 import Footer from "../../layout/Footer/Footer"; // Assuming Footer is still needed
+import { Helmet } from "react-helmet"; // Importing Helmet for SEO purposes
 
 const Cart = () => {
     const dispatch = useDispatch();
@@ -66,6 +67,10 @@ const Cart = () => {
 
     return (
         <div className={styles.root}>
+
+            <Helmet>
+                <title>FOKUS || Cart</title>
+            </Helmet>
 
             <div className={styles.header}>
                 <h1>Shopping Cart</h1>

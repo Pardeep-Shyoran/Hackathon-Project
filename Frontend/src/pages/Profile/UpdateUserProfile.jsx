@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { asyncUpdateUser } from "../../features/user/userActions";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 import "./UpdateUserProfile.css"; // External CSS
 
@@ -30,6 +31,9 @@ const UpdateUserProfile = () => {
 
     return (
         <div className="update-profile-container">
+            <Helmet>
+                <title>FOKUS || Update Profile</title>
+            </Helmet>
             <div className="form-wrapper">
                 <form
                     onSubmit={handleSubmit(UpdateUserHandler)}

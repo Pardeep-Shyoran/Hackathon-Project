@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { asyncRegisterUser } from "../../features/user/userActions";
 import { nanoid } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
-
+import { Helmet } from "react-helmet";
 
 
 const Register = () => {
@@ -43,6 +43,9 @@ const Register = () => {
 
     return (
         <div className={styles.register}>
+            <Helmet>
+                <title>FOKUS || Register</title>
+            </Helmet>
             <div className={styles["register-header"]}>
                 <h1>Registration</h1>
             </div>

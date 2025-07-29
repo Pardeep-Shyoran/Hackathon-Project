@@ -1,11 +1,15 @@
 import { useSelector } from "react-redux";
 import styles from "./Personal.module.css";
+import { Helmet } from "react-helmet";
 
 const Personal = () => {
     const { users } = useSelector((state) => state.userReducer);
 
     return (
         <div className={styles["personal-root"]}>
+            <Helmet>
+                <title>FOKUS || My Profile</title>
+            </Helmet>
             <div className={styles["personal-container"]}>
                 <div className={styles["personal-text"]}>
                     <h1>{users?.username}</h1>

@@ -10,6 +10,7 @@ import { asyncUpdateUser } from "../../features/user/userActions";
 import styles from "./ProductDetails.module.css";
 import Footer from "../../layout/Footer/Footer";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const ProductDetails = () => {
     const { id } = useParams();
@@ -66,6 +67,9 @@ const ProductDetails = () => {
 
     return product ? (
         <div className={styles.wrapper}>
+            <Helmet>
+                <title>FOKUS || {product.category}</title>
+            </Helmet>
 
             <div className={`${styles.productCard} ${styles.productDetailsLink}`} key={product.id}>
                 <Link to={`/shop/${product.id}`}>

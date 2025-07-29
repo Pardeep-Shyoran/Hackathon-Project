@@ -1,10 +1,14 @@
 import styles from './PageNotFound.module.css';
+import { Helmet } from 'react-helmet';
 
 const text = "404 Page Not Found\u00A0\u00A0";
 const repeats = 3;
 
 const PageNotFound = () => (
   <>
+    <Helmet>
+      <title>FOKUS || Page Not Found</title>
+    </Helmet>
     <div className={styles.marqueeImages}>
       <img src="https://res.cloudinary.com/dcaggtr9h/image/upload/v1752757867/Frame_1_c0dmtt.png" alt="" />
     </div>
