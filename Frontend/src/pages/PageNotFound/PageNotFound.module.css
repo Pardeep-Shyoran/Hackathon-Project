@@ -4,7 +4,6 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	transform: translateY(-50%);
 	overflow: hidden;
 	display: flex;
 	align-items: center;
@@ -39,8 +38,8 @@
 .marqueeImages {
 	position: fixed;
 	left: 50%;
-	bottom: -8rem;
-	transform: translateX(-50%) rotate(90deg);
+	top: -2rem;
+	transform: translateX(-50%) translateY(75%)  rotate(90deg);
 	display: flex;
 	justify-content: center;
 	width: auto;
@@ -53,7 +52,7 @@
 		font-size: 32vw;
 	}
 	.marqueeImages {
-		bottom: -2rem;
-		height: 40%;
+		top: 16rem;
+		height: 60vw;
 	}
 }

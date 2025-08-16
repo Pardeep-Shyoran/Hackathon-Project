@@ -2,110 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(135deg, var(--brown1) 50%, var(milk) 100%);
   min-height: 100vh;
   padding: 40px 16px;
+  padding-top: 8rem;
 }
-
-/* .card {
-  background: var(--brown1);
-  border-radius: 24px;
-  box-shadow: 0 4px 32px rgba(210, 150, 100, 0.13);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 40px 28px 40px 40px;
-  margin: 20px 0;
-  max-width: 560px;
-  min-width: 310px;
-  width: 100%;
-  transition: transform 0.23s cubic-bezier(.4,2,.6,1), box-shadow 0.23s;
-}
-.card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 12px 48px rgba(210, 150, 100, 0.17);
-}
-
-.profile {
-  margin-right: 32px;
-  text-align: center;
-}
-
-.avatar {
-  width: 98px;
-  height: 98px;
-  object-fit: cover;
-  border-radius: 20px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 10px rgba(210, 150, 100, 0.24);
-}
-
-.name {
-  font-weight: 700;
-  font-size: 22px;
-  margin-bottom: 3px;
-  letter-spacing: 0.03em;
-  color: #342c2b;
-}
-
-.title {
-  font-size: 14px;
-  color: #86725c;
-  margin-top: 2px;
-  margin-bottom: 10px;
-}
-
-.client-category {
-  font-weight: 700;
-  color: #ad7651;
-  font-size: 16px;
-  margin-bottom: 2px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-.heading {
-  font-weight: 800;
-  font-size: 22px;
-  margin-bottom: 8px;
-  color: #3d2f23;
-  letter-spacing: 0.04em;
-}
-
-.feedback {
-  font-size: 15px;
-  color: #5f4236;
-  margin-bottom: 18px;
-  line-height: 1.6;
-}
-
-.stars {
-  display: flex;
-  gap: 0.15em;
-  align-items: center;
-}
-
-.star {
-  color: #ffb766;
-  font-size: 24px;
-  transition: color 0.18s;
-}
-.star.inactive {
-  color: #f0d7b9;
-} */
-
-/* @media (max-width: 700px) {
-  .card {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 28px 12px;
-    max-width: 98vw;
-  }
-  .profile {
-    margin-right: 0;
-    margin-bottom: 18px;
-  }
-} */
 
 
 .testimonialContainer {
@@ -217,6 +119,9 @@
 
 /* Responsive design */
 @media (max-width: 700px) {
+  .container{
+    padding-top: 4rem;
+  }
   .testimonialContainer {
     flex-direction: column;
     padding: 0;

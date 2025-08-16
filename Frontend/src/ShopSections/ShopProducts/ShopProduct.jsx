@@ -1,15 +1,25 @@
+import { toast } from "react-toastify";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { asyncUpdateUser } from "../../features/user/userActions";
 import { useEffect, useState } from "react";
 import axios from "../../api/axiosconfig";
 import styles from "./ShopProduct.module.css";
-import { toast } from "react-toastify";
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const Products = () => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.userReducer.users);
   const [products, setProducts] = useState([]);
+
+  useGSAP(() => {
+    
+  }, []);
 
 
   useEffect(() => {

@@ -6,6 +6,10 @@
 	padding: 0 2rem;
 	font-size: 2rem;
 	font-weight: 600;
+	position: fixed;
+	width: 100%;
+	background-color: var(--milk);
+	border-radius: 0 0 3rem 3rem;
 }
 
 .nav-bar-item {

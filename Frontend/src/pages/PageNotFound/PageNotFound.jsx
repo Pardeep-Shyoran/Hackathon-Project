@@ -5,7 +5,7 @@ const text = "404 Page Not Found\u00A0\u00A0";
 const repeats = 3;
 
 const PageNotFound = () => (
-  <>
+  <div className={styles.container}>
     <Helmet>
       <title>FOKUS || Page Not Found</title>
     </Helmet>
@@ -23,7 +23,7 @@ const PageNotFound = () => (
         ))}
       </div>
     </div>
-  </>
+  </div>
 );
 
 export default PageNotFound;

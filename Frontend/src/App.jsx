@@ -6,8 +6,26 @@ import OpeningAnimation from "./components/OpeningAnimation/OpeningAnimation";
 import { useEffect } from "react";
 import Splash from "./components/Splash/Splash"
 import { asyncLoadProducts } from "./features/Product/productActions";
+import { useGSAP } from "@gsap/react";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import gsap from "gsap";
+
+
+gsap.registerPlugin(ScrollSmoother);
+
 
 const App = () => {
+
+  useGSAP(() => {
+    ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 1,
+      effects: true,
+      smoothTouch: 0.1,
+      normalizeScroll: true,
+    })
+  }, []);
 
   const dispatch = useDispatch();
   const { users } = useSelector((state) => state.userReducer);
@@ -27,12 +45,16 @@ const App = () => {
   return (
     // <Splash>
 
-    <div>
+    <>
+        <Header />
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
 
-      {/* <OpeningAnimation /> */}
-      <Header />
-      <MainRoutes />
+        {/* <OpeningAnimation /> */}
+        <MainRoutes />
+      </div>
     </div>
+    </>
     // </Splash>
   )
 }

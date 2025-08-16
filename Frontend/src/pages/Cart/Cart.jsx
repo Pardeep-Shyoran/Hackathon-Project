@@ -83,7 +83,7 @@ const Cart = () => {
                 <div className={styles.quantityControls}>Quantity</div>
             </div>
 
-            <ul style={{ paddingBottom: "1.5rem" }}>{CartItems}</ul>
+            <ul className={styles.listContainer} >{CartItems}</ul>
 
             <div className={styles.checkout}>
                 <span>Checkout :</span>
