@@ -40,11 +40,11 @@ const ProductDetails = () => {
         toast.success("Product Updated");
     };
 
-    const DeleteHandler = () => {
-        dispatch(asyncDeleteProduct(id));
-        toast.warn("Product Deleted!");
-        navigate("/products");
-    };
+    // const DeleteHandler = () => {
+    //     dispatch(asyncDeleteProduct(id));
+    //     toast.warn("Product Deleted!");
+    //     navigate("/products");
+    // };
 
     const AddToCartHandler = (product) => {
         const copyuser = { ...users, cart: [...users.cart] };

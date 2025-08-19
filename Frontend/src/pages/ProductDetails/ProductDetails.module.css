@@ -9,6 +9,7 @@
   background: var(--milk);
   position: relative;
   overflow: hidden;
+  padding-top: 6rem;
 }
 .productCard {
   margin: 12px;

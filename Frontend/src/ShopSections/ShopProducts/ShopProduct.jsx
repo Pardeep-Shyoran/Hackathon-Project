@@ -57,30 +57,37 @@ const Products = () => {
   return (
     <div>
       <div className={styles.productsContainer}>
-        {products.map((product) => (
-          <div className={`${styles.productCard} ${styles.productDetailsLink}`} key={product.id}>
-            <Link to={`/shop/${product.id}`}>
-              <img className={styles.productImage} src={product.image} alt={product.title} />
-            </Link>
-            <div className={styles.productDetails}>
-
-              <h1 className={styles.productTitle}>{product.title}</h1>
-              <h1 className={styles.productDesc}>{product.description}</h1>
-              <div className={styles.productBottomRow}>
-                <p className={styles.productPrice}>₹ {product.price}</p>
-                <button
-                  className={styles.btnAddToCart}
-                  onClick={() => AddToCartHandler(product)}
-                >
-                  Add to Cart
-                </button>
-              </div>
-              <Link to={`/shop/${product.id}`} className={` ${styles.moreDetails}`}>
-                View Details
+        <div className={styles.stackedCard}>
+          {products.map((product) => (
+            <div className={`${styles.productCard} ${styles.productDetailsLink}`} key={product.id}>
+              <Link className={styles.imgWrapper} to={`/shop/${product.id}`}>
+                <img className={styles.productImage} src={product.image} alt={product.title} />
               </Link>
+              <div className={styles.productDetails}>
+
+                <h1 className={styles.productTitle}>{product.title}</h1>
+                <h1 className={styles.productDesc}>
+                  {product.description.slice(0, 100)}...{" "}
+                  <Link className={styles.LinkPro} to={`/shop/${product.id}`}>
+                    <small className={styles.descMore}>More</small>
+                  </Link>
+                </h1>
+                <div className={styles.productBottomRow}>
+                  <p className={styles.productPrice}>₹ {product.price}</p>
+                  <button
+                    className={styles.btnAddToCart}
+                    onClick={() => AddToCartHandler(product)}
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+                <Link to={`/shop/${product.id}`} className={` ${styles.moreDetails}`}>
+                  View Details
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
